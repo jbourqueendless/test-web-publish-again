@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dhcpt1kt8cs0g"]
+[gd_scene load_steps=16 format=3 uid="uid://dhcpt1kt8cs0g"]
 
 [ext_resource type="PackedScene" uid="uid://8st4scqt06l8" path="res://components/player/player.tscn" id="2_7yl00"]
 [ext_resource type="PackedScene" uid="uid://jnrusvm3gric" path="res://spaces/background.tscn" id="2_tb5a2"]
@@ -13,6 +13,14 @@
 [ext_resource type="PackedScene" uid="uid://dk0xon0k7ga23" path="res://components/enemy/enemy.tscn" id="9_l6smt"]
 [ext_resource type="SpriteFrames" uid="uid://cp70hdrx2lc0o" path="res://components/player/spriteframes-green.tres" id="10_g34y8"]
 [ext_resource type="PackedScene" uid="uid://beuisy5yrw0bq" path="res://components/flag/flag.tscn" id="12_dkbog"]
+
+[sub_resource type="SystemFont" id="SystemFont_dco2c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dcqgl"]
+font = SubResource("SystemFont_dco2c")
+font_size = 28
+outline_color = Color(1, 0.0470588, 0.137255, 1)
+shadow_size = 20
 
 [node name="Main" type="Node2D"]
 
@@ -209,6 +217,15 @@ position = Vector2(0, 15)
 limit_left = 0
 limit_bottom = 1080
 position_smoothing_enabled = true
+
+[node name="Label" type="Label" parent="Player"]
+offset_left = -170.0
+offset_top = -151.0
+offset_right = 227.0
+offset_bottom = -93.0
+text = "Heather check it out it works!"
+label_settings = SubResource("LabelSettings_dcqgl")
+horizontal_alignment = 1
 
 [node name="HUD" parent="." instance=ExtResource("6_mp7wy")]
 

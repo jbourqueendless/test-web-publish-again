@@ -18,7 +18,7 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_dcqgl"]
 font = SubResource("SystemFont_dco2c")
-font_size = 28
+font_size = 33
 outline_color = Color(1, 0.0470588, 0.137255, 1)
 shadow_size = 20
 
@@ -211,6 +211,9 @@ position = Vector2(505, 601)
 collision_layer = 1
 collision_mask = 7
 sprite_frames = ExtResource("10_g34y8")
+jump_cut_factor = 60.0
+coyote_time = 0.25
+double_jump = true
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, 15)
@@ -219,11 +222,13 @@ limit_bottom = 1080
 position_smoothing_enabled = true
 
 [node name="Label" type="Label" parent="Player"]
-offset_left = -170.0
-offset_top = -151.0
-offset_right = 227.0
-offset_bottom = -93.0
-text = "Heather check it out it works!"
+offset_left = -879.0
+offset_top = -278.0
+offset_right = 952.0
+offset_bottom = -134.0
+text = "Will! Thank you for all the cool changes to player mechanics and the web publishing functionality! 
+I realize now that using a label above the player character to say this 
+long thank you was ill advised. But consider this my shout out!"
 label_settings = SubResource("LabelSettings_dcqgl")
 horizontal_alignment = 1
 
